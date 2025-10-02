@@ -72,15 +72,13 @@
                 display: inline-block;   
                 width: 100px;            
                 text-align: right;     
-                margin-right: 10px;      /* space between label and input */
+                margin-right: 10px;     
                 margin-top: 20px;
-                font-weight: bold;       /* makes it stand out */
+                font-weight: bold; 
                 font-size: 14px;
             }
 
-            .popUp input[type="text"],
-            .popUp input[type="password"],
-            .popUp input[type="email"] {
+            .inputs  {
                 width: 180px;      
                 padding: 4px;
                 margin-bottom: 10px;
@@ -139,10 +137,10 @@
                 <input type='hidden' name='command' value='SignIn'>  <!-- not visible to the user -->
 
                 <label for="si-username" class="labels">Username:</label>
-                <input id="si-username" type='text' name='username' required><br>
+                <input id="si-username" type='text' name='username' class='inputs' required><br>
 
                 <label for="si-password" class="labels">Password:</label>
-                <input id="si-password" type='password' name='password' required><br>
+                <input id="si-password" type='password' name='password' class='inputs' required><br>
 
                 <input type='button' value='Cancel' id='cancelSignIn' class="btnCancel"> <!-- regular button for Cancel -->
                 <input type='submit' value='Submit' class="btnSubmit">  <!-- Submit button -->
@@ -156,13 +154,13 @@
                 <input type='hidden' name='command' value='SignUp'>  <!-- not visible to the user -->
 
                 <label for="su-username" class="labels">Username:</label>
-                <input id="su-username" type='text' name='username' required><br>
+                <input id="su-username" type='text' name='username' class='inputs' required><br>
                 
                 <label for="su-password" class="labels">Password:</label>
-                <input id="su-password" type='password' name='password' required><br>
+                <input id="su-password" type='password' name='password' class='inputs' required><br>
 
                 <label for="su-email" class="labels">Email:</label>
-                <input id="su-email" type='email' name='email' required><br>
+                <input id="su-email" type='email' name='email' class='inputs' required><br>
                 
                 <input type='button' value='Cancel' id='cancelSignUp' class="btnCancel"> <!-- regular button for Cancel -->
                 <input type='submit' value='Submit' class="btnSubmit">  <!-- Submit button -->
@@ -176,10 +174,10 @@
                 <input type='hidden' name='command' value='ForgotPassword'>  <!-- not visible to the user -->
                 
                 <label for="f-password" class="labels">Password:</label>
-                <input id="f-password" type='password' name='password' required><br>
+                <input id="f-password" type='password' name='password' class='inputs' required><br>
 
                 <label for="cf-password" class="labels">Confirm Password:</label>
-                <input id="cf-password" type='password' name='Confirm Password' required><br>
+                <input id="cf-password" type='password' name='Confirm Password' class='inputs' required><br>
 
                 <input type='button' value='Cancel' id='cancelForgot' class="btnCancel"> <!-- regular button for Cancel -->
                 <input type='submit' value='Submit' class="btnSubmit">  <!-- Submit button -->
