@@ -133,7 +133,7 @@
 
         <div id="SignIn" class="popUp">
             <h2 style="margin-top: 50px;">Login to TRU Messenger</h2>
-            <form action="w4_controller_1234.php " method="post">
+            <form action="w4_controller_1234.php" method="post">
                 <input type='hidden' name='page' value='StartPage'>  <!-- not visible to the user -->
                 <input type='hidden' name='command' value='SignIn'>  <!-- not visible to the user -->
 
@@ -188,7 +188,7 @@
         <!-- JavaScript -->
         <script>
 
-            // Open
+            // Open blanket, sign in and sign up
             document.getElementById('SignInBtn').addEventListener('click', function(){
                 document.getElementById('blanket').style.display = 'block';
                 document.getElementById('SignIn').style.display = 'block';
@@ -202,7 +202,7 @@
                 document.getElementById('ForgotPassword').style.display = 'block';
             });
 
-            // Close (buttons)
+            // Close buttons
             document.getElementById('cancelSignIn').addEventListener('click', function(){
                 document.getElementById('blanket').style.display = 'none';
                 document.getElementById('SignIn').style.display = 'none';
@@ -216,7 +216,7 @@
                 document.getElementById('ForgotPassword').style.display = 'none';
             });
 
-            // Close (blanket)
+            // Close blanket, sigin in and sign up pop ups using blanket
             document.getElementById('blanket').addEventListener('click', function(){
                 this.style.display = 'none';
                 document.getElementById('SignIn').style.display = 'none';
